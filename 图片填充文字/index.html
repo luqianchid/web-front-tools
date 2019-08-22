@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>图片填充效果</title>
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #eee;
+  }
+  h1 {
+    font-size: 100px;
+    font-weight: 800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    background: url('./img/bg.png') 50% 50%;
+    text-transform: uppercase;
+    /* 文本全部大写 */
+    background-size: contain;
+    /* 背景图片自适应 */
+    -webkit-text-fill-color: transparent;
+    /* 镂空字体 目前只有chorme支持 */
+    -webkit-background-clip: text;
+    /* 剪除文字之外的背景图片 */
+  }
+  </style>
+</head>
+<body>
+  <h1>hello,world</h1>
+</body>
+</html>
